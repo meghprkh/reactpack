@@ -13,6 +13,7 @@ module.exports = function (config, options) {
 
   var server = new WebpackDevServer(compiler, {
     contentBase: config.output.path,
+    publicPath: config.output.publicPath,
     historyApiFallback: true,
 
     watchOptions: {
